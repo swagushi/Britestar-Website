@@ -16,26 +16,41 @@
             line-height: 1.6;
             color: #333;
         }
+        .top-banner{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1865px;
+        height: 458px;
+        z-index: -1;
+        }
         
         .container {
             max-width: 1200px;
-            margin: 0 auto;
+            margin-top: 0px;
+            margin-left: 335px;
+            margin-bottom: 100;
             padding: 20px;
         }
         
         h1 {
             text-align: center;
-            margin: 40px 0 20px;
-            color: #2c3e50;
+            margin: 350px 0 20px;
+            color: #ffffff;
+            font-size: 40px;
         }
         
         .intro {
             text-align: center;
+            margin-top: 75px;
             margin-bottom: 50px;
-            color: #666;
-            max-width: 600px;
+            color: #4B2A63;
+            max-width: 6000px;
             margin-left: auto;
             margin-right: auto;
+            font: 1em sans-serif;
+            font-weight: bold;
         }
         
         .staff-grid {
@@ -46,7 +61,7 @@
         }
         
         .staff-card {
-            background: #f9f9f9;
+            background: #F4A025;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -54,15 +69,15 @@
         }
         
         .staff-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px);
         }
         
         .staff-image {
-            width: 100%;
-            height: 250px;
+            width: 367px;
+            height: 300px;
             background: #e0e0e0;
             display: flex;
-            align-items: center;
+            align-items: normal;
             justify-content: center;
             color: #999;
         }
@@ -90,36 +105,79 @@
         }
     </style>
 </head>
-<body>
+<body style="background-color: #ffffff;">
+    <header>
+        <img src="images/banner for staff page.png" alt="Error" class="top-banner">
+    </header>
     <div class="container">
         <h1>Meet Our Team</h1>
-        <p class="intro">Our dedicated team of professionals is committed to delivering excellence and innovation. Get to know the talented individuals behind Britestar.</p>
+        <p class="intro">At Britestar, our team is the heart of everything we do. Each member brings passion, experience, and a genuine commitment to creating a safe, engaging, and supportive environment for every child in our care.
+
+We believe that before and after school care should be more than supervision - it should be a space where children feel valued, encouraged, and inspired to grow. From creative activities to active play and homework support, our staff work together to make every day meaningful and fun.
+
+Our educators and leaders are carefully selected for their dedication, energy, and ability to connect with children of all ages. We pride ourselves on building strong relationships with families and fostering a positive community where everyone feels welcome.
+
+Get to know the friendly faces who make Britestar a place children love to be.</p>
         
         <div class="staff-grid">
             <div class="staff-card">
-                <div class="staff-image">[Image]</div>
+                <div class="staff-image"><img src="images/image.png" alt="team member">
+                </div>
                 <div class="staff-info">
                     <div class="staff-name">John Smith</div>
-                    <div class="staff-title">Founder & CEO</div>
-                    <div class="staff-bio">Visionary leader with 15+ years of industry experience.</div>
+                    <div class="staff-title">Director of Out of School Care</div>
+                    <div class="staff-bio">Manages the before and after-school care programme.<br>
+                        Email: fake@idk.com<br>
+                        Phone:123456789
+                    </div>
                 </div>
             </div>
             
             <div class="staff-card">
-                <div class="staff-image">[Image]</div>
+                <div class="staff-image"><img src="images/team member.png" alt="team member">
+                </div>
                 <div class="staff-info">
                     <div class="staff-name">Sarah Johnson</div>
-                    <div class="staff-title">Head of Operations</div>
-                    <div class="staff-bio">Expert in streamlining processes and team management.</div>
+                    <div class="staff-title">Out of School Care (OSC) Educator</div>
+                    <div class="staff-bio">Educator and care-taker for the kids.<br>
+                        Email: fake@idk.com<br>
+                        Phone:123456789</div>
                 </div>
             </div>
             
             <div class="staff-card">
-                <div class="staff-image">[Image]</div>
+                <div class="staff-image"><img src="images/image.png" alt="team member">
+                </div>
                 <div class="staff-info">
                     <div class="staff-name">Mike Davis</div>
-                    <div class="staff-title">Lead Developer</div>
-                    <div class="staff-bio">Full-stack developer passionate about clean code.</div>
+                    <div class="staff-title">Out of School Care (OSC) Educator</div>
+                    <div class="staff-bio">Educator and care-taker for the kids.<br>
+                        Email: fake@idk.com<br>
+                        Phone:123456789</div>
+                </div>
+            </div>
+
+            <div class="staff-card">
+                <div class="staff-image"><img src="images/image.png" alt="team member">
+                </div>
+                <div class="staff-info">
+                    <div class="staff-name">Anthony Damon</div>
+                    <div class="staff-title">Out of School Care (OSC) Educator</div>
+                    <div class="staff-bio">Educator and care-taker for the kids.<br>
+                        Email: fake@idk.com<br>
+                        Phone:123456789</div>
+                </div>
+            </div>
+
+            <div class="staff-card">
+                <div class="staff-image"><img src="images/team member.png" alt="team member">
+                </div>
+                <div class="staff-info">
+                    <div class="staff-name">Michelle Micheal </div>
+                    <div class="staff-title">Out of School Care (OSC) Educator</div>
+                    <div class="staff-bio">Educator and care-taker for the kids.<br>
+                        Email: fake@idk.com<br>
+                        Phone:123456789</div>
                 </div>
             </div>
         </div>
