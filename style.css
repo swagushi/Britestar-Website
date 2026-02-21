@@ -1,10 +1,10 @@
 .cta {
-  text-align: center;   /* centers inline/inline-block children */
+  text-align: center;   
   margin: 30px 0;
 }
 
 .btn {
-  display: inline-block; /* important for centering via text-align */
+  display: inline-block; 
   position: relative;
   top: -90px;
   padding: 10px 20px;
@@ -23,15 +23,104 @@
     max-width: 800px;
     margin: 70px auto;     
     padding: 40px;
-    background-color: #ffffff;
+    background-color: #1f1f1f;
+    color: #ffffff;
     border-radius: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
     text-align: center;
 }
 
 
 .footer {
-     display: inline-block; /* important for centering via text-align */
+     display: inline-block; 
   position: relative;
   top: 1840px;
+}
+
+.testimonial-section {
+  padding: 700px 20px 60px;;
+}
+
+.testimonial-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 420px; 
+}
+
+.testimonial-card {
+  width: 65%;
+  background: #1f1f1f;
+  color: #ffffff;
+  padding: 50px 60px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.1);
+}
+
+.testimonial-card .quote {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.quote-name {
+  margin-top: 22px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.quote-source {
+  margin-top: 6px;
+  text-align: center;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+.testimonial-image {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36%;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.testimonial-image img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+
+@media (max-width: 900px) {
+  .testimonial-wrap {
+    min-height: auto;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    padding: 30px 22px;
+  }
+
+  .testimonial-image {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-top: 18px;
+  }
+
+  .testimonial-image img {
+    height: 240px;
+  }
+}
+
+.Reviews {
+  color: #ffffff;
+  position: relative;
+  top: 700px;
+  left : 700px;
 }
