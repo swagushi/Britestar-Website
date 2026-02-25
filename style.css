@@ -256,3 +256,21 @@
   position: relative;
   text-align: center;
 }
+
+nav {
+    top: -30px;
+    position: relative;
+    font-size: larger;
+}
+
+.Find-Us {
+    color: #ffffff;
+    font-size: 22px;
+    bottom: 650px;
+     position: relative;
+}
+
+.Find-Us h1 {
+    margin-bottom: 10px; 
+    margin-top: -20px;   
+}
