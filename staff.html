@@ -4,109 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Staff - Britestar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #1D1313;">
+    <header>
+        <a href="http://127.0.0.1:5500/homepage.html#home">
+        <img src="britestar logo.PNG" alt="britestarlogo" class="top-image">
+    </a>
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        .top-banner{
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 1865px;
-        height: 458px;
-        z-index: -1;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin-top: 0px;
-            margin-left: 335px;
-            margin-bottom: 100;
-            padding: 20px;
-        }
-        
-        h1 {
-            text-align: center;
-            margin: 350px 0 20px;
-            color: #ffffff;
-            font-size: 40px;
-        }
-        
-        .intro {
-            text-align: center;
-            margin-top: 75px;
-            margin-bottom: 50px;
-            color: #4B2A63;
-            max-width: 6000px;
-            margin-left: auto;
-            margin-right: auto;
-            font: 1em sans-serif;
-            font-weight: bold;
-        }
-        
-        .staff-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-        
-        .staff-card {
-            background: #F4A025;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-        
-        .staff-card:hover {
-            transform: translateY(-10px);
-        }
-        
-        .staff-image {
-            width: 367px;
-            height: 300px;
-            background: #e0e0e0;
-            display: flex;
-            align-items: normal;
-            justify-content: center;
-            color: #999;
-        }
-        
-        .staff-info {
-            padding: 20px;
-        }
-        
-        .staff-name {
-            font-size: 20px;
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 5px;
-        }
-        
-        .staff-title {
-            color: #3498db;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-        
-        .staff-bio {
-            color: #666;
-            font-size: 14px;
+        .top-image {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 200px;
+            height: auto;
         }
     </style>
-</head>
-<body style="background-color: #ffffff;">
-    <header>
+
+        <nav>
+
+            <a href="#about">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>        
         <img src="images/banner for staff page.png" alt="Error" class="top-banner">
     </header>
     <div class="container">
@@ -127,11 +48,10 @@ Get to know the friendly faces who make Britestar a place children love to be.</
                     <div class="staff-name">John Smith</div>
                     <div class="staff-title">Director of Out of School Care</div>
                     <div class="staff-bio">Manages the before and after-school care programme.<br>
-                        Email: fake@idk.com<br>
-                        Phone:123456789
+                        Email: <a href="fake@idk.com">fake@idk.com</a><br>
+                        Phone:<a href="123456789">+123456789</a></div>
                     </div>
                 </div>
-            </div>
             
             <div class="staff-card">
                 <div class="staff-image"><img src="images/team member.png" alt="team member">
@@ -140,8 +60,8 @@ Get to know the friendly faces who make Britestar a place children love to be.</
                     <div class="staff-name">Sarah Johnson</div>
                     <div class="staff-title">Out of School Care (OSC) Educator</div>
                     <div class="staff-bio">Educator and care-taker for the kids.<br>
-                        Email: fake@idk.com<br>
-                        Phone:123456789</div>
+                        Email: <a href="fake@idk.com">fake@idk.com</a><br>
+                        Phone:<a href="123456789">+123456789</a></div>
                 </div>
             </div>
             
@@ -152,8 +72,8 @@ Get to know the friendly faces who make Britestar a place children love to be.</
                     <div class="staff-name">Mike Davis</div>
                     <div class="staff-title">Out of School Care (OSC) Educator</div>
                     <div class="staff-bio">Educator and care-taker for the kids.<br>
-                        Email: fake@idk.com<br>
-                        Phone:123456789</div>
+                        Email: <a href="fake@idk.com">fake@idk.com</a><br>
+                        Phone:<a href="123456789">+123456789</a></div>
                 </div>
             </div>
 
@@ -164,8 +84,8 @@ Get to know the friendly faces who make Britestar a place children love to be.</
                     <div class="staff-name">Anthony Damon</div>
                     <div class="staff-title">Out of School Care (OSC) Educator</div>
                     <div class="staff-bio">Educator and care-taker for the kids.<br>
-                        Email: fake@idk.com<br>
-                        Phone:123456789</div>
+                        Email: <a href="fake@idk.com">fake@idk.com</a><br>
+                        Phone:<a href="123456789">+123456789</a></div>
                 </div>
             </div>
 
@@ -176,11 +96,45 @@ Get to know the friendly faces who make Britestar a place children love to be.</
                     <div class="staff-name">Michelle Micheal </div>
                     <div class="staff-title">Out of School Care (OSC) Educator</div>
                     <div class="staff-bio">Educator and care-taker for the kids.<br>
-                        Email: fake@idk.com<br>
-                        Phone:123456789</div>
+                        Email: <a href="fake@idk.com">fake@idk.com</a><br>
+                        Phone:<a href="123456789">+123456789</a></div>
+                </div>
+            </div>
+                        <div class="staff-card">
+                <div class="staff-image"><img src="images/team member.png" alt="team member">
+                </div>
+                <div class="staff-info">
+                    <div class="staff-name">Becca Wilson</div>
+                    <div class="staff-title">Out of School Care (OSC) Educator</div>
+                    <div class="staff-bio">Educator and care-taker for the kids.<br>
+                        Email: <a href="fake@idk.com">fake@idk.com</a><br>
+                        Phone:<a href="123456789">+123456789</a></div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-block">
+        <h3>Britestar</h3>
+        <p>After School Care</p>
+        </div>
+
+        <div class="footer-block">
+        <h3>Contact Us!</h3>
+        <p>Phone: <a href="tel:+64210000000">+64 0201328742</a></p>
+        <p>Email: <a href="mailto:hello@britestar.co.nz">Britestar@britestar.co.nz</a></p>
+        </div>
+
+        <div class="footer-block">
+        <h3>Socials</h3>
+        <a href="https://facebook.com" target="_blank">Facebook</a><br>
+        <a href="https://www.instagram.com/instagram/" target="_blank">Instagram</a>
+        </div>
+    </div>
+
+    <p class="footer-bottom">© 2026 Britestar. All rights reserved.</p>
+</footer>
+
 </html>
