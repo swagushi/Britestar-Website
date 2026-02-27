@@ -84,7 +84,7 @@
 }
 
 .testimonial-section {
-  padding: 200px 20px 60px;;
+  padding: 90px 20px 60px;;
 }
 
 .testimonial-wrap {
@@ -166,9 +166,12 @@
 
 .Reviews {
   color: #ffffff;
+  font-size: 22px;
+  margin-top: 10px; 
+  top: 100px;
   position: relative;
-  top: 200px;
-  text-align: center;
+  margin-bottom: 10px; 
+  text-align: center; 
 }
 
 
@@ -179,7 +182,7 @@
   padding: 20px 20px;
   margin-top: 60px; 
   text-align: center;
-  top : 600px;
+  top : 700px;
   position: relative;
 }
 
@@ -223,8 +226,8 @@
   border-radius: 40px;
   padding: 70px 60px;
   margin: 60px auto;
-  height: 300px;
-  top: -200px;
+  height: 500px;
+  top: -150px;
   min-height: 400px;
   position: relative;
   text-align: center; 
@@ -280,7 +283,7 @@ nav {
 .services-button {
     text-align: center;
     margin-top: 50px;
-    top : -300px;
+    top : -250px;
     position: relative;
 }
 
@@ -301,3 +304,5 @@ nav {
 {
     filter: brightness(70%);
 }
+
+
