@@ -15,7 +15,7 @@
 }
 
 .btn:hover {
-  background-color: #00c9fc;
+  background-color: #179bd8;
   cursor: pointer;
 }
 
@@ -277,9 +277,27 @@ nav {
     margin-top: -20px;   
 }
 
+.services-button {
+    text-align: center;
+    margin-top: 50px;
+    top : -300px;
+    position: relative;
+}
 
+.services-text-box {
+    background: #443737;
+    border-radius: 40px;
+    padding: 70px 60px;
+    color: #ffffff;
+    margin: 60px auto;
+    height: 300px;
+    top: -600px;
+    min-height: 400px;
+    position: relative;
+    text-align: center; 
+}
 
-
-
-
-
+.top-banner
+{
+    filter: brightness(70%);
+}
