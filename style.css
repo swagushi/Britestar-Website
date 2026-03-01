@@ -305,5 +305,147 @@ nav {
     filter: brightness(70%);
 }
 
+/* =========================================================
+   Mobile-friendly overrides (keeps desktop layout the same)
+   ========================================================= */
+@media (max-width: 768px) {
 
 
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  header {
+    padding: 0.75rem 1rem !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  .top-banner {
+    position: absolute !important;
+    top: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 100% !important;
+    height: 240px !important;
+    object-fit: cover !important;
+    z-index: -1 !important;
+  }
+
+
+  .top-image {
+    position: static !important;
+    width: 150px !important;
+    height: auto !important;
+    margin: 6px auto 0 !important;
+    display: block !important;
+  }
+
+
+  nav {
+    position: static !important;
+    top: auto !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 16px !important;
+    font-size: 16px !important;
+    margin: 6px 0 0 !important;
+    padding: 0 14px !important;
+  }
+
+  nav a {
+    margin-left: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    text-decoration: none !important;
+  }
+
+  .hero {
+    padding: 4rem 1rem !important;
+  }
+
+  .about-panel,
+  .Services-panel,
+  .services-text-box {
+    padding: 32px 18px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+  }
+
+
+  .space-for-contact {
+    height: 260px !important;
+    padding-bottom: 0 !important;
+  }
+
+ 
+  .Find-Us {
+    bottom: 0 !important;
+    top: 0 !important;
+    padding: 0 16px;
+    text-align: left !important;
+  }
+
+  .Find-Us iframe {
+    width: 100% !important;
+    max-width: 740px;
+    height: 320px !important;
+    display: block;
+  }
+
+ 
+  .footer,
+  .site-footer {
+    position: static !important;
+    top: auto !important;
+  }
+
+  .footer-inner {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 18px !important;
+    text-align: center !important;
+  }
+
+  .footer-block {
+    width: 100% !important;
+    max-width: 520px;
+  }
+
+  .footer-block:nth-child(2) {
+    margin-left: 0 !important;
+  }
+
+  
+  .btn {
+    top: 0 !important;
+  }
+
+  .services-button {
+    top: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-left h2 { font-size: 30px !important; }
+  .about-lead { font-size: 16px !important; }
+
+  .testimonial-section { padding: 60px 14px 40px !important; }
+  .testimonial-card { padding: 26px 16px !important; }
+
+  .Find-Us iframe { height: 260px !important; }
+}
