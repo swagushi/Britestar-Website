@@ -293,7 +293,7 @@ nav {
     padding: 70px 60px;
     color: #ffffff;
     margin: 60px auto;
-    height: 300px;
+    height: 500px;
     top: -600px;
     min-height: 400px;
     position: relative;
@@ -304,5 +304,6 @@ nav {
 {
     filter: brightness(70%);
 }
+
 
 
