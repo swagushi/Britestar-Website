@@ -258,7 +258,7 @@
 
 .contact-page {
   color: #ffffff;
-  top : 220px;
+  top : 60px;
   position: relative;
   text-align: center;
 }
@@ -278,15 +278,16 @@ nav {
 .Find-Us {
     color: #ffffff;
     font-size: 22px;
-    bottom: 400px;
     text-align: left;
-     position: relative;
+    position: relative;
+    top: -600px;
+    margin-left: 25px; 
 }
 
 .Find-Us h1 {
     margin-bottom: 10px; 
     text-align: left;
-    margin-top: -20px;   
+    margin-top: -20px;  
 }
 
 .services-button {
