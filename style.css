@@ -311,7 +311,7 @@ nav {
 
 .top-banner
 {
-    filter: brightness(60%);
+    
 }
 
 
@@ -460,4 +460,15 @@ nav {
   .testimonial-card { padding: 26px 16px !important; }
 
   .Find-Us iframe { height: 260px !important; }
+}
+
+.logo-box {
+  position: absolute;
+  top: 20px;         
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(255, 255, 255);
+  padding: 100px;
+  border-radius: 20px;
+  z-index: 1;        
 }
