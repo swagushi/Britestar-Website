@@ -340,11 +340,18 @@ nav {
     height: 350px;
     bottom: 250px;
     right: 250px;
-    min-height: 450px;
+    min-height: 50px;
     position: relative;
     text-align: center; 
 }
 
+.contacthead
+{
+    top: 200px;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
 
 .top-banner
 {
