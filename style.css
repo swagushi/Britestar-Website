@@ -300,15 +300,51 @@ nav {
 .services-text-box {
     background: #443737;
     border-radius: 40px;
-    padding: 70px 60px;
+    padding: 50px 50px;
+    width: 65%;
     color: #ffffff;
+    font-size: 22px;
     margin: 60px auto;
-    height: 500px;
-    top: 100px;
-    min-height: 400px;
+    height: 350px;
+    bottom: 490px;
+    right: 250px;
+    min-height: 450px;
     position: relative;
     text-align: center; 
 }
+
+.services-text-box2 {
+    background: #443737;
+    border-radius: 40px;
+    padding: 50px 50px;
+    width: 65%;
+    color: #ffffff;
+    font-size: 22px;
+    margin: 60px auto;
+    height: 350px;
+    bottom: 350px;
+    left: 250px;
+    min-height: 550px;
+    position: relative;
+    text-align: center; 
+}
+
+.services-text-box3 {
+    background: #443737;
+    border-radius: 40px;
+    padding: 50px 50px;
+    width: 65%;
+    color: #ffffff;
+    font-size: 22px;
+    margin: 60px auto;
+    height: 350px;
+    bottom: 250px;
+    right: 250px;
+    min-height: 450px;
+    position: relative;
+    text-align: center; 
+}
+
 
 .top-banner
 {
@@ -422,20 +458,7 @@ nav {
     padding: 4rem 1rem !important;
   }
 
-  .about-panel,
-  .Services-panel,
-  .services-text-box {
-    padding: 32px 18px !important;
-    height: auto !important;
-    min-height: 0 !important;
-    top: 0 !important;
-    bottom: 0 !important;
-  }
-
-  .space-for-contact {
-    height: 260px !important;
-    padding-bottom: 0 !important;
-  }
+ 
 
   
   .Find-Us {
