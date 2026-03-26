@@ -315,6 +315,37 @@ nav {
     
 }
 
+.logo-box {
+  position: absolute;
+  top: 20px;         
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(255, 255, 255);
+  padding: 100px;
+  border-radius: 20px;
+  z-index: 1;        
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.carousel-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.carousel-img.active {
+  opacity: 1;
+}
 
 
 /* =========================================================
@@ -463,13 +494,3 @@ nav {
   .Find-Us iframe { height: 260px !important; }
 }
 
-.logo-box {
-  position: absolute;
-  top: 20px;         
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgb(255, 255, 255);
-  padding: 100px;
-  border-radius: 20px;
-  z-index: 1;        
-}
