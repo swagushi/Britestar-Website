@@ -253,15 +253,16 @@
   }
 
 .space-for-contact {
-  height: 800px; 
+  height: 500px; 
 }
 
 .contact-page {
   color: #ffffff;
-  top : 60px;
+  top : 90px;
   position: relative;
   text-align: center;
 }
+
 
 nav {
     top: -20px;
