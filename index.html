@@ -257,24 +257,97 @@ We look forward to welcoming you and your family</p>
   <p class="footer-bottom">© 2026 Britestar. All rights reserved.</p>
 </footer>
 
+
+
+
 </body>
 </html>
 
 
-<div class="carousel">
+<section class="premium-carousel">
+  <div class="carousel-slide active">
+    <img src="banner photo (1).png" alt="Britestar activity 1">
+  </div>
 
-<img src="Banner.png" class="carousel-img active">
-<img src="banner photo (1).png" class="carousel-img">
-<img src="britestar contact photo.PNG" class="carousel-img">
+  <div class="carousel-slide">
+    <img src="britestar contact photo.PNG" alt="Britestar activity 2">
+  </div>
+
+  <div class="carousel-slide">
+    <img src="epic-mountain-mural-wallpaper-photo-l.png" alt="Britestar activity 3">
+  </div>
+
+  <button class="carousel-btn prev">&#10094;</button>
+  <button class="carousel-btn next">&#10095;</button>
+
+  <div class="carousel-dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
   </div>
 
 <script>
-let index = 0;
-const images = document.querySelectorAll(".carousel-img");
+  const slides = document.querySelectorAll(".carousel-slide");
+  const dots = document.querySelectorAll(".dot");
+  const nextBtn = document.querySelector(".carousel-btn.next");
+  const prevBtn = document.querySelector(".carousel-btn.prev");
+  const carousel = document.querySelector(".premium-carousel");
 
-setInterval(() => {
-  images[index].classList.remove("active");
-  index = (index + 1) % images.length;
-  images[index].classList.add("active");
-}, 5000); // change every 3 seconds
+  let currentSlide = 0;
+  let carouselInterval;
+
+  function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove("active"));
+    dots.forEach(dot => dot.classList.remove("active"));
+
+    slides[index].classList.add("active");
+    dots[index].classList.add("active");
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function startCarousel() {
+    carouselInterval = setInterval(nextSlide, 3500);
+  }
+
+  function stopCarousel() {
+    clearInterval(carouselInterval);
+  }
+
+  nextBtn.addEventListener("click", () => {
+    nextSlide();
+    stopCarousel();
+    startCarousel();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    prevSlide();
+    stopCarousel();
+    startCarousel();
+  });
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      currentSlide = index;
+      showSlide(currentSlide);
+      stopCarousel();
+      startCarousel();
+    });
+  });
+
+  carousel.addEventListener("mouseenter", stopCarousel);
+  carousel.addEventListener("mouseleave", startCarousel);
+
+  startCarousel();
 </script>
+
+
+</section>
