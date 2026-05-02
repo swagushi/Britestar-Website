@@ -607,3 +607,65 @@ nav {
   .Find-Us iframe { height: 260px !important; }
 }
 
+/* ============================
+   CONTACT PAGE SHORTENING FIX
+   ============================ */
+
+/* Reduce giant gap under Contact Us */
+.contact-page h1 {
+  margin-bottom: 120px !important; /* was 320px */
+}
+
+/* Reduce how far contact info is pulled upward */
+.contact-info {
+  margin-top: -250px !important; /* was -550px */
+}
+
+/* Reduce map height */
+.Find-Us iframe {
+  height: 350px !important; /* was 550px */
+}
+
+/* Reduce Find-Us upward pull */
+.Find-Us {
+  top: -300px !important; /* was -600px */
+}
+
+/* Reduce footer downward push */
+.site-footer {
+  top: 300px !important; /* was 700px */
+}
+
+
+/* ============================
+   SERVICES PAGE SHORTENING FIX
+   ============================ */
+
+/* Reduce giant empty space at top */
+.space-for-contact {
+  height: 200px !important; /* was 500px */
+}
+
+/* First services box: reduce downward stretch */
+.services-text-box {
+  bottom: 60px !important; /* was 490px */
+  height: 280px !important; /* was 350px */
+}
+
+/* Second services box */
+.services-text-box2 {
+  bottom: 75px !important; /* was 350px */
+  height: 300px !important; /* was 350px */
+}
+
+/* Third services box */
+.services-text-box3 {
+  bottom: 85px !important; /* was 250px */
+  height: 360px !important; /* was 350px */
+}
+
+/* If Services-panel is used on this page */
+.Services-panel {
+  top: 80px !important; /* was 200px */
+  height: 380px !important; /* was 500px */
+}
