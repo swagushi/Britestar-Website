@@ -632,8 +632,33 @@ nav {
 }
 
 /* Reduce footer downward push */
-.site-footer {
+.site-footer1 {
   top: 300px !important; /* was 700px */
+}
+
+
+/* ============================
+   CONTACT PAGE SHORTENING FIX
+   ============================ */
+
+.contact-page-body .contact-page h1 {
+  margin-bottom: 120px !important;
+}
+
+.contact-page-body .contact-info {
+  margin-top: -250px !important;
+}
+
+.contact-page-body .Find-Us iframe {
+  height: 350px !important;
+}
+
+.contact-page-body .Find-Us {
+  top: -300px !important;
+}
+
+.contact-page-body .site-footer {
+  top: 300px !important;
 }
 
 
@@ -641,31 +666,26 @@ nav {
    SERVICES PAGE SHORTENING FIX
    ============================ */
 
-/* Reduce giant empty space at top */
-.space-for-contact {
-  height: 200px !important; /* was 500px */
+.services-page-body .space-for-contact {
+  height: 200px !important;
 }
 
-/* First services box: reduce downward stretch */
-.services-text-box {
-  bottom: 60px !important; /* was 490px */
-  height: 280px !important; /* was 350px */
+.services-page-body .services-text-box {
+  bottom: 60px !important;
+  height: 280px !important;
 }
 
-/* Second services box */
-.services-text-box2 {
-  bottom: 75px !important; /* was 350px */
-  height: 300px !important; /* was 350px */
+.services-page-body .services-text-box2 {
+  bottom: 75px !important;
+  height: 300px !important;
 }
 
-/* Third services box */
-.services-text-box3 {
-  bottom: 85px !important; /* was 250px */
-  height: 360px !important; /* was 350px */
+.services-page-body .services-text-box3 {
+  bottom: 85px !important;
+  height: 360px !important;
 }
 
-/* If Services-panel is used on this page */
-.Services-panel {
-  top: 80px !important; /* was 200px */
-  height: 380px !important; /* was 500px */
+.services-page-body .Services-panel {
+  top: 80px !important;
+  height: 380px !important;
 }
