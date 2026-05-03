@@ -100,7 +100,9 @@ nav a:hover,
   width: 90%;
   max-width: 1200px;
   position: relative;
-  bottom: 120px;
+  display: flexbox;
+  justify-content: center;
+  bottom: 270px;
 }
 
 .about-inner {
@@ -242,7 +244,7 @@ nav a:hover,
 .Reviews {
   color: #ffffff;
   font-size: 22px;
-  margin: 60px 0 20px;
+  margin: 10px 0 10px;
   text-align: center;
 }
 
@@ -616,5 +618,143 @@ nav a:hover,
 
   .Find-Us iframe {
     height: 230px;
+  }
+}
+
+
+
+
+
+
+
+
+/* =========================
+   HEADER (DESKTOP)
+========================= */
+
+  
+
+/* Logo box */
+.logo-box {
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  background: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Logo image */
+.logo-box img {
+  width: 180px;
+  max-width: 40vw; /* responsive scaling */
+  height: auto;
+}
+
+nav {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  gap: 40px;
+  z-index: 3;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+
+/* =========================
+   FIX CLICKABLE HEADER LINKS
+========================= */
+
+.site-header {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("banner\ photo\ \(1\).png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Make sure nothing invisible blocks clicks */
+.site-header::before,
+.site-header::after,
+.top-banner {
+  pointer-events: none;
+}
+
+.logo-box {
+  position: absolute;
+  top: 80px;              /* move up/down as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  background: white;
+  padding: 12px 20px;
+  border-radius: 14px;
+
+  z-index: 3;
+}
+
+.logo-box a {
+  display: block;
+  position: relative;
+  z-index: 102;
+}
+
+.logo-box img {
+  width: 180px;
+  max-width: 40vw;
+  height: auto;
+  display: block;
+}
+
+.main-nav {
+  position: relative;
+  z-index: 103;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  position: relative;
+  z-index: 104;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-nav a:hover {
+  color: #ffd700;
+}
+
+@media (max-width: 768px) {
+  .logo-box img {
+    width: 130px;
+  }
+
+  .main-nav {
+    gap: 16px;
+  }
+
+  .main-nav a {
+    font-size: 16px;
   }
 }
