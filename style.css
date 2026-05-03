@@ -231,8 +231,9 @@ nav a:hover,
 }
 
 .Find-Us iframe {
+  position: static;
   width: 100%;
-  height: 350px;
+  height: 550px;
   border-radius: 12px;
   display: block;
 }
