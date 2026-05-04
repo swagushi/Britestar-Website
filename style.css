@@ -156,8 +156,11 @@ nav a:hover,
 /* ---------- Services page boxes ---------- */
 
 
-.services-text-box {
-    background: #443737;
+/* Shared style */
+.services-text-box,
+.services-text-box2,
+.services-text-box3 {
+  background: #443737;
   border-radius: 40px;
   padding: 50px;
   width: 75%;
@@ -167,43 +170,23 @@ nav a:hover,
   line-height: 1.6;
   margin: 60px auto;
   text-align: center;
-  right: 400px;
-  top : 25px;
-  position: relative;
+}
+
+/* Alternate positioning (desktop only) */
+.services-text-box {
+  margin-right: auto;
+  margin-left: 0;
 }
 
 .services-text-box2 {
-    background: #443737;
-  border-radius: 40px;
-  padding: 50px;
-  width: 75%;
-  max-width: 950px;
-  color: #ffffff;
-  font-size: 22px;
-  line-height: 1.6;
-  margin: 60px auto;
-  text-align: center;
-  left: 400px;
-  top : 25px;
-  position: relative;
+  margin-left: auto;
+  margin-right: 0;  
 }
 
 .services-text-box3 {
-    background: #443737;
-  border-radius: 40px;
-  padding: 50px;
-  width: 75%;
-  max-width: 950px;
-  color: #ffffff;
-  font-size: 22px;
-  line-height: 1.6;
-  margin: 60px auto;
-  text-align: center;
- right: 400px;  
-  top : 25px;
-  position: relative;
+  margin-right: auto;
+  margin-left: 0;
 }
-
 
 
 /* ---------- Contact page ---------- */
@@ -211,7 +194,17 @@ nav a:hover,
 .contacthead {
   color: #ffffff;
   text-align: center;
-  margin: 60px 0 30px;
+  display: flexbox;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0 30px;
+}
+
+.contact-page {
+  display: flexbox;
+  flex-wrap: wrap;
+  justify-content: center;
+  
 }
 
 .space-for-contact {
