@@ -203,8 +203,8 @@ nav a:hover,
 .contact-page {
   display: flexbox;
   flex-wrap: wrap;
-  justify-content: center;
-  
+  justify-content: center;  
+  margin-bottom: 20px;
 }
 
 .space-for-contact {
