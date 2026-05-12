@@ -7,29 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: #1D1313;">
-    <header>
-        <a href="index.html">
-        <img src="birght star (2).png" alt="britestarlogo" class="top-image">
+    
+
+        <header class="site-header">
+
+  <!-- Logo -->
+  <div class="logo-box">
+    <a href="index.html">
+      <img src="birght star (2).png" alt="Britestar logo">
     </a>
+  </div>
 
-    <style>
-        .top-image {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 200px;
-            height: auto;
-        }
-    </style>
+  <!-- Nav -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="Services.html">Services</a>
+    <a href="Contact.html">Contact</a>
+    <a href="staff.html">Staff</a>
+  </nav>
 
-        <nav>
+</header>
 
-            <a href="index.html#about">About</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </nav>        
-        <img src="epic-mountain-mural-wallpaper-photo-l.png" alt="Error" class="top-banner">
-    </header>
+
+
     <div class="container">
         <h1>Meet Our Team</h1>
         <p class="intro">At Britestar, our team is the heart of everything we do. Each member brings passion, experience, and a genuine commitment to creating a safe, engaging, and supportive environment for every child in our care.
@@ -40,6 +40,13 @@ Our educators and leaders are carefully selected for their dedication, energy, a
 
 Get to know the friendly faces who make Britestar a place children love to be.</p>
         
+<style>
+    .container {
+    position: relative;
+    bottom: 300px;
+    }
+</style>
+
         <div class="staff-grid">
             <div class="staff-card">
                 <div class="staff-image"><img src="images/image.png" alt="team member">
@@ -256,12 +263,13 @@ h1 {
   }
 
 .site-footer {
+    position: static;
+    bottom: 0;
     width: 100%;
-    background: #1f1f1f;
-    color: #fff;
-    padding: 20px 20px;
-    margin-top: -500px;
-  }
+    left: 0;
+}
+
+
 
 .footer-inner {
     width: 100%;
@@ -295,5 +303,8 @@ h1 {
   }
 
 </style>
+
+
+
 
 </html>

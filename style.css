@@ -1,32 +1,108 @@
+/* =========================================================
+   DESKTOP CSS
+   Edit this section freely for desktop
+   ========================================================= */
+
+/* ---------- Global fixes ---------- */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------- Header / Nav ---------- */
+header {
+  position: relative;
+  padding: 20px;
+}
+
+.logo-box {
+  background-color: white;
+  padding: 80px;
+  border-radius: 14px;
+  display: block;
+  width: fit-content;
+  margin: 10px auto;
+  position: relative;
+  left: 255px;
+  
+}
+
+.logo-box img,
+.top-image {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+nav,
+.navContactService {
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  font-size: larger;
+  margin: 15px 0 25px;
+}
+
+nav a,
+.navContactService a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover,
+.navContactService a:hover {
+  color: #fbff00;
+}
+
+/* ---------- Buttons ---------- */
 .cta {
-  text-align: center;   
+  text-align: center;
   margin: 30px 0;
 }
 
-
-
-
-.btn {
-  display: inline-block; 
-  position: relative;
-  top: -90px;
-  padding: 10px 20px;
+.btn,
+.services-button a {
+  display: inline-block;
+  padding: 12px 24px;
   background-color: #9800f0;
   color: #fff;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
-.btn:hover {
+.btn:hover,
+.services-button a:hover {
   background-color: #179bd8;
   cursor: pointer;
 }
 
+.services-button {
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* ---------- About section ---------- */
 .about-panel {
   background: #443737;
   border-radius: 18px;
   padding: 70px 60px;
   margin: 60px auto;
+  width: 90%;
+  max-width: 1200px;
+  position: relative;
+  display: flexbox;
+  justify-content: center;
+  bottom: 270px;
 }
 
 .about-inner {
@@ -59,42 +135,121 @@
   margin-bottom: 22px;
 }
 
+/* ---------- Home services panel ---------- */
+.Services-panel {
+  background: #443737;
+  border-radius: 40px;
+  padding: 70px 60px;
+  margin: 60px auto;
+  width: 90%;
+  max-width: 1000px;
+  min-height: 350px;
+  text-align: center;
+}
 
-@media (max-width: 900px) {
-  .about-panel {
-    padding: 40px 22px;
-  }
+.Services {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
 
-  .about-inner {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
+/* ---------- Services page boxes ---------- */
 
-  .about-left h2 {
-    font-size: 34px;
-  }
 
-  .about-lead {
-    font-size: 18px;
-  }
+/* Shared style */
+.services-text-box,
+.services-text-box2,
+.services-text-box3 {
+  background: #443737;
+  border-radius: 40px;
+  padding: 50px;
+  width: 75%;
+  max-width: 950px;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1.6;
+  margin: 60px auto;
+  text-align: center;
+}
+
+/* Alternate positioning (desktop only) */
+.services-text-box {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.services-text-box2 {
+  margin-left: auto;
+  margin-right: 0;  
+}
+
+.services-text-box3 {
+  margin-right: auto;
+  margin-left: 0;
 }
 
 
-.footer {
-     display: inline-block; 
-  position: relative;
-  top: 1800px;
+/* ---------- Contact page ---------- */
+.contact-page,
+.contacthead {
+  color: #ffffff;
+  text-align: center;
+  display: flexbox;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0 30px;
+}
+
+.contact-page {
+  display: flexbox;
+  flex-wrap: wrap;
+  justify-content: center;  
+  margin-bottom: 20px;
+}
+
+.space-for-contact {
+  height: auto;
+}
+
+.Find-Us {
+  color: #ffffff;
+  font-size: 22px;
+  text-align: left;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.Find-Us h1 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.Find-Us iframe {
+  position: static;
+  width: 100%;
+  height: 550px;
+  border-radius: 12px;
+  display: block;
+}
+
+/* ---------- Testimonials ---------- */
+.Reviews {
+  color: #ffffff;
+  font-size: 22px;
+  margin: 10px 0 10px;
+  text-align: center;
 }
 
 .testimonial-section {
-  padding: 90px 20px 60px;;
+  padding: 90px 20px 60px;
 }
 
 .testimonial-wrap {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  min-height: 420px; 
+  min-height: 420px;
 }
 
 .testimonial-card {
@@ -104,6 +259,8 @@
   padding: 50px 60px;
   border-radius: 18px;
   box-shadow: 0 12px 30px rgba(255, 255, 255, 0.1);
+  position: relative;
+  bottom: 100px;
 }
 
 .testimonial-card .quote {
@@ -128,7 +285,7 @@
 .testimonial-image {
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 30%;
   transform: translateY(-50%);
   width: 36%;
   border-radius: 18px;
@@ -144,71 +301,123 @@
   display: block;
 }
 
-
-@media (max-width: 900px) {
-  .testimonial-wrap {
-    min-height: auto;
-  }
-
-  .testimonial-card {
-    width: 100%;
-    padding: 30px 22px;
-  }
-
-  .testimonial-image {
-    position: static;
-    transform: none;
-    width: 100%;
-    margin-top: 18px;
-  }
-
-  .testimonial-image img {
-    height: 240px;
-  }
-}
-
-.Reviews {
-  color: #ffffff;
-  font-size: 22px;
-  margin-top: 10px; 
-  top: 100px;
+/* ---------- Carousel ---------- */
+.premium-carousel {
   position: relative;
-  margin-bottom: 10px; 
-  text-align: center; 
+  width: 100%;
+  max-width: 1100px;
+  height: 420px;
+  margin: 60px auto;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #000;
 }
 
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
+}
 
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
 
-.site-footer {
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  border: none;
+  background: rgba(0, 0, 0, 0.45);
+  color: white;
+  font-size: 32px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.carousel-btn.prev {
+  left: 18px;
+}
+
+.carousel-btn.next {
+  right: 18px;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: white;
+}
+
+/* ---------- Footer ---------- */
+.footer,
+.site-footer,
+.site-footer1 {
   background: #1f1f1f;
   color: #fff;
-  padding: 20px 20px;
-  margin-top: 60px; 
+  padding: 30px 20px;
+  margin-top: 60px;
   text-align: center;
-  top : 700px;
-  position: relative;
 }
 
 .footer-inner {
-  max-width: 1700px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   gap: 40px;
   justify-content: space-between;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   text-align: center;
+}
+
+.footer-block {
+  flex: 1;
+  min-width: 220px;
 }
 
 .footer-block h3 {
   margin-bottom: 10px;
 }
 
-.site-footer a {
+.site-footer a,
+.footer a {
   color: #ffd700;
   text-decoration: none;
 }
 
-.site-footer a:hover {
+.site-footer a:hover,
+.footer a:hover {
   text-decoration: underline;
 }
 
@@ -219,268 +428,292 @@
   font-size: 14px;
 }
 
-.footer-block:nth-child(2) {
-  margin-left: -40px; 
-}
 
+/* =========================================================
+   MOBILE CSS
+   Only edit this section when changing mobile
+   ========================================================= */
 
-.Services-panel {
-  background: #443737;
-  border-radius: 40px;
-  padding: 70px 60px;
-  margin: 60px auto;
-  height: 500px;
-  top: 200px;
-  min-height: 400px;
-  position: relative;
-  text-align: center; 
-}
+@media (max-width: 768px) {
 
-.Services {
-  color: #ffffff;
-  font-size: 22px;
-  margin-top: 0; 
-  margin-bottom: 20px; 
-  position: static; 
-}
+  header {
+    padding: 14px 16px;
+  }
 
-.Services text
-  {
-    font-size: 18px;
-    color: #fff;
-    line-height: 1.8;
+  .logo-box {
+    padding: 10px;
+    margin: 8px auto 12px;
+  }
+
+  .logo-box img,
+  .top-image {
+    width: 125px;
+  }
+
+  nav,
+  .navContactService {
+    gap: 14px;
+    font-size: 16px;
+    margin: 8px 0 18px;
+  }
+
+  nav a,
+  .navContactService a {
+    padding: 6px 8px;
+  }
+
+  .hero {
+    padding: 50px 20px;
     text-align: center;
   }
 
-.space-for-contact {
-  height: 800px; 
+  .about-panel,
+  .Services-panel,
+  .services-text-box,
+  .services-text-box2,
+  .services-text-box3 {
+    width: auto;
+    margin: 35px 12px;
+    padding: 32px 20px;
+    border-radius: 28px;
+    font-size: 17px;
+  }
+
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .about-left h2 {
+    font-size: 32px;
+  }
+
+  .about-lead,
+  .about-right p {
+    font-size: 16px;
+  }
+
+  .contact-page,
+  .contacthead {
+    margin: 35px 0 20px;
+    padding: 0 16px;
+  }
+
+  .Find-Us {
+    width: auto;
+    margin: 30px 16px;
+    font-size: 18px;
+  }
+
+  .Find-Us h1 {
+    font-size: 32px;
+  }
+
+  .Find-Us iframe {
+    height: 260px;
+  }
+
+  .testimonial-section {
+    padding: 40px 16px;
+  }
+
+  .testimonial-wrap {
+    min-height: auto;
+  }
+
+  .testimonial-card {
+    width: auto;
+    padding: 28px 20px;
+  }
+
+  .testimonial-image {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .testimonial-image img {
+    height: 230px;
+  }
+
+  .premium-carousel {
+    height: 250px;
+    width: 100%;
+    max-width: 100%;
+    margin: 35px auto;
+    border-radius: 0;
+  }
+
+  .carousel-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 22px;
+  }
+
+  .carousel-btn.prev {
+    left: 10px;
+  }
+
+  .carousel-btn.next {
+    right: 10px;
+  }
+
+  .footer,
+  .site-footer,
+  .site-footer1 {
+    margin-top: 40px;
+    padding: 30px 16px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+  }
+
+  .footer-block {
+    width: 100%;
+    max-width: 420px;
+  }
 }
 
-.contact-page {
-  color: #ffffff;
-  top : 60px;
-  position: relative;
-  text-align: center;
+
+@media (max-width: 480px) {
+
+  .logo-box img,
+  .top-image {
+    width: 110px;
+  }
+
+  nav,
+  .navContactService {
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .about-panel,
+  .Services-panel,
+  .services-text-box,
+  .services-text-box2,
+  .services-text-box3 {
+    margin: 28px 10px;
+    padding: 28px 16px;
+    font-size: 16px;
+  }
+
+  .premium-carousel {
+    height: 220px;
+  }
+
+  .Find-Us iframe {
+    height: 230px;
+  }
+}
+
+
+
+
+
+
+
+
+/* =========================
+   HEADER (DESKTOP)
+========================= */
+
+  
+
+/* Logo box */
+.logo-box {
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  background: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Logo image */
+.logo-box img {
+  width: 180px;
+  max-width: 40vw; /* responsive scaling */
+  height: auto;
 }
 
 nav {
-    top: -20px;
-    position: relative;
-    font-size: larger;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  gap: 40px;
+  z-index: 3;
 }
 
-.navContactService {
-    top: 15px;
-    position: relative;
-    font-size: larger;
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.Find-Us {
-    color: #ffffff;
-    font-size: 22px;
-    text-align: left;
-    position: relative;
-    top: -600px;
-    margin-left: 25px; 
+nav a:hover {
+  color: #ffd700;
 }
 
-.Find-Us h1 {
-    margin-bottom: 10px; 
-    text-align: left;
-    margin-top: -20px;  
+
+/* =========================
+   FIX CLICKABLE HEADER LINKS
+========================= */
+
+.site-header {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("banner\ photo\ \(1\).png");
+  background-size: cover;
+  background-position: center;
 }
 
-.services-button {
-    text-align: center;
-    margin-top: 50px;
-    top : 160px;
-    position: relative;
-}
-
-.services-text-box {
-    background: #443737;
-    border-radius: 40px;
-    padding: 50px 50px;
-    width: 65%;
-    color: #ffffff;
-    font-size: 22px;
-    margin: 60px auto;
-    height: 350px;
-    bottom: 490px;
-    right: 250px;
-    min-height: 450px;
-    position: relative;
-    text-align: center; 
-}
-
-.services-text-box2 {
-    background: #443737;
-    border-radius: 40px;
-    padding: 50px 50px;
-    width: 65%;
-    color: #ffffff;
-    font-size: 22px;
-    margin: 60px auto;
-    height: 350px;
-    bottom: 350px;
-    left: 250px;
-    min-height: 550px;
-    position: relative;
-    text-align: center; 
-}
-
-.services-text-box3 {
-    background: #443737;
-    border-radius: 40px;
-    padding: 50px 50px;
-    width: 65%;
-    color: #ffffff;
-    font-size: 22px;
-    margin: 60px auto;
-    height: 350px;
-    bottom: 250px;
-    right: 250px;
-    min-height: 50px;
-    position: relative;
-    text-align: center; 
-}
-
-.contacthead
-{
-    top: 200px;
-    position: relative;
-    text-align: center;
-    color: #ffffff;
-}
-
-.top-banner
-{
-    
+/* Make sure nothing invisible blocks clicks */
+.site-header::before,
+.site-header::after,
+.top-banner {
+  pointer-events: none;
 }
 
 .logo-box {
   position: absolute;
-  top: 20px;         
+  top: 80px;              /* move up/down as needed */
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgb(255, 255, 255);
-  padding: 100px;
-  border-radius: 20px;
-  z-index: 1;        
+  
+  background: white;
+  padding: 12px 20px;
+  border-radius: 14px;
+
+  z-index: 3;
 }
 
-.carousel {
+.logo-box a {
+  display: block;
   position: relative;
-  width: 100%;
-  height: 450px;
-  overflow: hidden;
-  border-radius: 25px;
+  z-index: 102;
 }
 
-.carousel-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 2s ease-in-out;
+.logo-box img {
+  width: 180px;
+  max-width: 40vw;
+  height: auto;
+  display: block;
 }
-
-.carousel-img.active {
-  opacity: 1;
-}
-
-
-/* =========================================================
-   Mobile-friendly overrides (keeps desktop layout the same)
-   ========================================================= */
-@media (max-width: 768px) {
-
- 
-  html, body {
-    width: 100%;
-    overflow-x: hidden;
-  }
-
- 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  
-  header {
-    padding: 0.75rem 1rem !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 10px !important;
-  }
-
-  
-  .top-banner {
-    position: absolute !important;
-    top: 0 !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: 100% !important;
-    height: 240px !important;
-    object-fit: cover !important;
-    z-index: -1 !important;
-  }
-
- 
-  .top-image {
-    position: static !important;
-    width: 150px !important;
-    height: auto !important;
-    margin: 6px auto 0 !important;
-    display: block !important;
-  }
-
-  
-  nav {
-    position: static !important;
-    top: auto !important;
-    width: 100% !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 16px !important;
-    font-size: 16px !important;
-    margin: 6px 0 0 !important;
-    padding: 0 14px !important;
-  }
-
-  nav a {
-    margin-left: 0 !important;
-    padding: 0 !important;
-    border: 0 !important;
-    border-radius: 0 !important;
-    background: transparent !important;
-    text-decoration: none !important;
-  }
-
-
-  .hero {
-    padding: 4rem 1rem !important;
-  }
-
- 
-
-  
-  .Find-Us {
-    bottom: 0 !important;
-    top: 0 !important;
-    padding: 0 16px;
-    text-align: left !important;
-  }
-
-  .Find-Us iframe {
-    width: 100% !important;
-    max-width: 740px;
-    height: 320px !important;
-    display: block;
-  }
 
   .footer,
   .site-footer {
@@ -512,33 +745,18 @@ nav {
   .services-button {
     top: 0 !important;
   }
-
-  .carousel{
-    max-height: 200px;
-    bottom: 350px;
-    margin-top: 50px;
-  }
-  .Services-text{
-    font-size: 15px;
-    color: #ffffff;
-  }
-  .Services-panel{
-    top: 00px;
-  }
-
-  .idk{
-    height: 500px;
-  }
-
 }
 
-@media (max-width: 480px) {
-  .about-left h2 { font-size: 30px !important; }
-  .about-lead { font-size: 16px !important; }
+@media (max-width: 768px) {
+  .logo-box img {
+    width: 130px;
+  }
 
-  .testimonial-section { padding: 60px 14px 40px !important; }
-  .testimonial-card { padding: 26px 16px !important; }
+  .main-nav {
+    gap: 16px;
+  }
 
-  .Find-Us iframe { height: 260px !important; }
+  .main-nav a {
+    font-size: 16px;
+  }
 }
-

@@ -79,11 +79,6 @@
 </head>
 <body style="background-color: #1d1313;">
     <head>
-
-         <header>
-        <img src="banner photo (1).png" alt="Website banner image" class="top-banner">
-        
-    </header>
  
     
     <style>
@@ -105,53 +100,69 @@
    
 
 
-    <header>
-        
-      <div class="logo-box">
- <a href="index.html">
-        <img src="birght star (2).png" alt="britestarlogo" class="top-image">
-      </div>
-       
+
+
+    <header class="site-header">
+
+  <!-- Logo -->
+  <div class="logo-box">
+    <a href="index.html">
+      <img src="birght star (2).png" alt="Britestar logo">
     </a>
+  </div>
 
-    <style>
-        .top-image {
-            position: absolute;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 200px;
-            height: auto;
-        }
-    </style>
+  <!-- Nav -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="Services.html">Services</a>
+    <a href="Contact.html">Contact</a>
+    <a href="staff.html">Staff</a>
+  </nav>
 
-        <nav>
+</header>
 
-            <a href="#about">About</a>
-            <a href="Services.html">Services</a>
-            <a href="Contact.html">Contact</a>
-        </nav>
 
-       
 
-        
-    </header>
+
+
+
+
     
     <section class="hero">
         <h1>Welcome to Britestar</h1>
         <p>Laugh learn and play each day!</p>
     </section>
 
+<style>
+    .hero {
+        position: relative;
+        display: flexbox;
+        justify-content: center;
+        bottom: 330px;
+    } 
+</style>
+
     <div class="cta">
   <a href="staff.html" class="btn">Meet our staff!</a>
 </div>
+
+<style>
+    .cta {
+        position: relative;
+        display: flexbox;
+        justify-content: center;
+        bottom: 430px;
+    }
+</style>
 
     
     
 <section id="about" class="about-panel">
   <div class="about-inner">
     <div class="about-left">
+
       <h2>Welcome to Britestar</h2>
+      
 
       <p class="about-lead">
         Britestar provides a safe, supportive after-school environment for children.
@@ -229,10 +240,107 @@ We look forward to welcoming you and your family</p>
   <a href="Services.html" class="btn">Learn more about our services!</a>
 </div>
 
+<style>
+.services-button {
+    position: relative;
+    bottom: 120px;
+}
+
+</style>
+
    
 
     </div>
 </div>
+
+<section class="premium-carousel">
+  <div class="carousel-slide active">
+    <img src="banner photo (1).png" alt="Britestar activity 1">
+  </div>
+
+  <div class="carousel-slide">
+    <img src="britestar contact photo.PNG" alt="Britestar activity 2">
+  </div>
+
+  <div class="carousel-slide">
+    <img src="epic-mountain-mural-wallpaper-photo-l.png" alt="Britestar activity 3">
+  </div>
+
+  <button class="carousel-btn prev">&#10094;</button>
+  <button class="carousel-btn next">&#10095;</button>
+
+  <div class="carousel-dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+<script>
+  const slides = document.querySelectorAll(".carousel-slide");
+  const dots = document.querySelectorAll(".dot");
+  const nextBtn = document.querySelector(".carousel-btn.next");
+  const prevBtn = document.querySelector(".carousel-btn.prev");
+  const carousel = document.querySelector(".premium-carousel");
+
+  let currentSlide = 0;
+  let carouselInterval;
+
+  function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove("active"));
+    dots.forEach(dot => dot.classList.remove("active"));
+
+    slides[index].classList.add("active");
+    dots[index].classList.add("active");
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function startCarousel() {
+    carouselInterval = setInterval(nextSlide, 3500);
+  }
+
+  function stopCarousel() {
+    clearInterval(carouselInterval);
+  }
+
+  nextBtn.addEventListener("click", () => {
+    nextSlide();
+    stopCarousel();
+    startCarousel();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    prevSlide();
+    stopCarousel();
+    startCarousel();
+  });
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      currentSlide = index;
+      showSlide(currentSlide);
+      stopCarousel();
+      startCarousel();
+    });
+  });
+
+  carousel.addEventListener("mouseenter", stopCarousel);
+  carousel.addEventListener("mouseleave", startCarousel);
+
+  startCarousel();
+</script>
+
+
+</section>
+
 
 <footer class="site-footer">
   <div class="footer-inner">
@@ -257,24 +365,10 @@ We look forward to welcoming you and your family</p>
   <p class="footer-bottom">© 2026 Britestar. All rights reserved.</p>
 </footer>
 
+
+
+
 </body>
 </html>
 
 
-<div class="carousel">
-
-<img src="Banner.png" class="carousel-img active">
-<img src="banner photo (1).png" class="carousel-img">
-<img src="britestar contact photo.PNG" class="carousel-img">
-  </div>
-
-<script>
-let index = 0;
-const images = document.querySelectorAll(".carousel-img");
-
-setInterval(() => {
-  images[index].classList.remove("active");
-  index = (index + 1) % images.length;
-  images[index].classList.add("active");
-}, 5000); // change every 3 seconds
-</script>
