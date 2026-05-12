@@ -512,6 +512,24 @@ nav {
   .services-button {
     top: 0 !important;
   }
+
+  .carousel{
+    max-height: 200px;
+    bottom: 350px;
+    margin-top: 50px;
+  }
+  .Services-text{
+    font-size: 15px;
+    color: #ffffff;
+  }
+  .Services-panel{
+    top: 00px;
+  }
+
+  .idk{
+    height: 500px;
+  }
+
 }
 
 @media (max-width: 480px) {
