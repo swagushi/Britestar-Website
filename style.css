@@ -190,48 +190,27 @@ nav a:hover,
 
 
 /* ---------- Contact page ---------- */
-.contact-page,
-.contacthead {
-  color: #ffffff;
+
+
+
+.contact-us-header{
   text-align: center;
-  display: flexbox;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 20px 0 30px;
+  padding-top: 50px;
+  font-size: 40px;
 }
 
-.contact-page {
-  display: flexbox;
-  flex-wrap: wrap;
-  justify-content: center;  
-  margin-bottom: 20px;
+.find-us-header{
+  text-align: right;
+  width: 1510px;
+  
 }
 
-.space-for-contact {
-  height: auto;
-}
-
-.Find-Us {
-  color: #ffffff;
-  font-size: 22px;
-  text-align: left;
-  width: 90%;
-  max-width: 1000px;
-  margin: 40px auto;
-}
-
-.Find-Us h1 {
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.Find-Us iframe {
-  position: static;
-  width: 100%;
+.contact-container iframe {
+  width: 740px;
   height: 550px;
-  border-radius: 12px;
-  display: block;
+  margin-right: 1px;
 }
+
 
 /* ---------- Testimonials ---------- */
 .Reviews {
@@ -715,6 +694,109 @@ nav a:hover {
   display: block;
 }
 
+.main-nav {
+  position: relative;
+  z-index: 103;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  position: relative;
+  z-index: 104;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-nav a:hover {
+  color: #ffd700;
+}
+
+@media (max-width: 768px) {
+  .logo-box img {
+    width: 130px;
+  }
+
+  .main-nav {
+    gap: 16px;
+  }
+
+  .main-nav a {
+    font-size: 16px;
+  }
+<<<<<<< HEAD
+
+  
+  .top-banner {
+    position: absolute !important;
+    top: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 100% !important;
+    height: 240px !important;
+    object-fit: cover !important;
+    z-index: -1 !important;
+  }
+
+ 
+  .top-image {
+    position: static !important;
+    width: 150px !important;
+    height: auto !important;
+    margin: 6px auto 0 !important;
+    display: block !important;
+  }
+
+  
+  nav {
+    position: static !important;
+    top: auto !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 16px !important;
+    font-size: 16px !important;
+    margin: 6px 0 0 !important;
+    padding: 0 14px !important;
+  }
+
+  nav a {
+    margin-left: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    text-decoration: none !important;
+  }
+
+
+  .hero {
+    padding: 4rem 1rem !important;
+  }
+
+ 
+
+  
+  .Find-Us {
+    bottom: 0 !important;
+    top: 0 !important;
+    padding: 0 16px;
+    text-align: left !important;
+  }
+
+  .Find-Us iframe {
+    width: 100% !important;
+    max-width: 740px;
+    height: 320px !important;
+    display: block;
+  }
+
   .footer,
   .site-footer {
     position: static !important;
@@ -745,18 +827,36 @@ nav a:hover {
   .services-button {
     top: 0 !important;
   }
+
+  .carousel{
+    max-height: 200px;
+    bottom: 350px;
+    margin-top: 50px;
+  }
+  .Services-text{
+    font-size: 15px;
+    color: #ffffff;
+  }
+  .Services-panel{
+    top: 00px;
+  }
+
+  .idk{
+    height: 500px;
+  }
+
 }
 
-@media (max-width: 768px) {
-  .logo-box img {
-    width: 130px;
-  }
+@media (max-width: 480px) {
+  .about-left h2 { font-size: 30px !important; }
+  .about-lead { font-size: 16px !important; }
 
-  .main-nav {
-    gap: 16px;
-  }
+  .testimonial-section { padding: 60px 14px 40px !important; }
+  .testimonial-card { padding: 26px 16px !important; }
 
-  .main-nav a {
-    font-size: 16px;
-  }
+  .Find-Us iframe { height: 260px !important; }
 }
+
+=======
+}
+>>>>>>> bed8f3e99dd4a2e189ac042006b15308fb360bbd
