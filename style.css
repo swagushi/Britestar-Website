@@ -189,6 +189,36 @@ nav a:hover,
 }
 
 
+.photo1forservice
+{
+  max-height: 50px;
+  max-width: 600px;
+  position: relative;
+  left: 900px;
+  bottom: 350px;
+  padding-left: 20px;
+}
+
+.photo2forservice
+{
+  max-height: 50px;
+  max-width: 600px;
+  position: relative;
+  right: 650px;
+  bottom: 350px;
+  padding-right: 20px;
+}
+
+
+.photo3forservice
+{
+  max-height: 50px;
+  max-width: 600px;
+  position: relative;
+  left: 900px;
+  bottom: 350px;
+  padding-left: 20px;
+}
 
 /* ---------- Contact page ---------- */
 
