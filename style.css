@@ -446,6 +446,18 @@ nav a:hover,
     padding: 50px 20px;
     text-align: center;
   }
+  .header-index{
+    text-align: center;
+    margin-top: 25px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .index-para{
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+  }
 
   .about-panel,
   .Services-panel,
