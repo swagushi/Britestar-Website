@@ -189,6 +189,7 @@ nav a:hover,
 }
 
 
+
 /* ---------- Contact page ---------- */
 
 
@@ -457,6 +458,7 @@ nav a:hover,
     border-radius: 28px;
     font-size: 17px;
   }
+
 
   .about-inner {
     grid-template-columns: 1fr;
@@ -729,7 +731,6 @@ nav a:hover {
   .main-nav a {
     font-size: 16px;
   }
-<<<<<<< HEAD
 
   
   .top-banner {
@@ -857,6 +858,4 @@ nav a:hover {
   .Find-Us iframe { height: 260px !important; }
 }
 
-=======
-}
->>>>>>> bed8f3e99dd4a2e189ac042006b15308fb360bbd
+
