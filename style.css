@@ -197,6 +197,8 @@ nav a:hover,
   left: 900px;
   bottom: 350px;
   padding-left: 20px;
+  padding: 70px 60px;
+  border-radius: 30px;
 }
 
 .photo2forservice
@@ -207,6 +209,8 @@ nav a:hover,
   right: 650px;
   bottom: 350px;
   padding-right: 20px;
+  border-radius: 28px;
+  padding: 70px 60px;
 }
 
 
@@ -218,6 +222,7 @@ nav a:hover,
   left: 900px;
   bottom: 350px;
   padding-left: 20px;
+  padding: 70px 60px;
 }
 
 /* ---------- Contact page ---------- */
